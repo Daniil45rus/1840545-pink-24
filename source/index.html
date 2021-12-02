@@ -1,12 +1,190 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
+  <body class="body">
+    <header class="header">
+      <a href="index.html" class="header__logo">
+        <svg></svg>
+      </a>
+      <nav class="header-navigation">
+        <button class="header-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="header-navigation__wrapper">
+          <ul class="header-navigation__list">
+            <li class="header-navigation__item">
+              <a href="index.html" class="header-navigation__link">
+                главная
+              </a>
+            </li>
+            <li class="header-navigation__item">
+              <a href="catalog.html" class="header-navigation__link">
+                фотографии
+              </a>
+            </li>
+            <li class="header-navigation__item">
+              <a href="form.html" class="header-navigation__link">
+                конкурс
+              </a>
+            </li>
+            <li class="header-navigation__item">
+              <a href="#" class="header-navigation__link">
+                html academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <header class="main__header main__header--index">
+        <h1 class="visually-hidden">Приложение PINK поможет раскрасить ваши серые будни</h1>
+        <h2 class="main__header-title">
+          Взгляните на жизнь иначе!
+        </h2>
+      </header>
+      <section class="main__download">
+        <h2 class="visually-hidden">Скачать приложение PINK</h2>
+        <a class="main__download-link" href="#">
+          Скачать приложение
+        </a>
+        <ul class="main__download-list">
+          <li class="main__download-item">
+            <a class="visually-hidden" href="#">Скачать для iOS</a>
+          </li>
+          <li class="main__download-item">
+            <a class="visually-hidden" href="#">Скачать для Android</a>
+          </li>
+          <li class="main__download-item">
+            <a class="visually-hidden" href="#">Скачать для Windows</a>
+          </li>
+        </ul>
+        <p class="main__download-text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+      <section class="main__specifications">
+        <h2 class="main__specifications-title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
+        <ul class="main__specifications-list">
+          <li class="main__specifications-item">
+            <p class="main__specifications-item-title">
+              Поднимает настроение
+            </p>
+            <p class="main__specifications-item-text">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
+          </li>
+          <li class="main__specifications-item">
+            <p class="main__specifications-title">
+              Меняет мир вокруг
+            </p>
+            <p class="main__specifications-text">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </p>
+          </li>
+          <li class="main__specifications-item">
+            <p class="main__specifications-title">
+              Заводит новых друзей
+            </p>
+            <p class="main__specifications-text">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="main__comment">
+        <ul class="main__comment-list">
+          <li class="main__comment-item">
+            <p class="main__comment-name">
+              Николай Петров
+            </p>
+            <p class="main__comment-text">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </li>
+        </ul>
+        <ol class="main__comment-switch">
+          <li class="main__comment-switch-item">
+            <button class="button-comment-switch button-comment-switch--current button" type="button">
+              <span class="visually-hidden">Первый отзыв</span>
+            </button>
+          </li>
+          <li class="main__comment-switch-item">
+            <button class="button-comment-switch button" type="button">
+              <span class="visually-hidden">Второй отзыв</span>
+            </button>
+          </li>
+          <li class="main__comment-switch-item">
+            <button class="button-comment-switch button" type="button">
+              <span class="visually-hidden">Третий отзыв</span>
+            </button>
+          </li>
+        </ol>
+      </section>
+      <section class="main__tariff">
+        <table class="main__tariff-table">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+        </table>
+      </section>
+      <section class="main__contacts">
+        <h2 class="main__contacts-title">Остались вопросы? Свяжитесь с нами!</h2>
+        <ul class="main__contacts-list">
+          <li class="main__contacts-item">
+            <p class="main__contacts-title">
+              Звоните:
+            </p>
+            <p class="main__contacts-text">
+              +7 (812) 555-66-66
+            </p>
+          </li>
+          <li class="main__contacts-item">
+            <p class="main__contacts-title">
+              Пишите:
+            </p>
+            <p class="main__contacts-text">
+              mail@htmlacademy.ru
+            </p>
+          </li>
+          <li class="main__contacts-item">
+            <p class="main__contacts-title">
+              Приезжайте в гости:
+            </p>
+            <p class="main__contacts-text">
+              ул. Большая Конюшенная, 19/8
+            </p>
+          </li>
+        </ul>
+        <div class="main__map">
 
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo">
+        <svg></svg>
+        <svg></svg>
+      </div>
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="#">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="#">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="#">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+      <div class="footer__designed">
+        <span class="footer__designed-text">Разработано</span>
+      </div>
+    </footer>
   </body>
 </html>
