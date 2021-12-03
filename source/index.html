@@ -13,7 +13,7 @@
         <button class="header-navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="header-navigation__wrapper">
+        <div class="wrapper">
           <ul class="header-navigation__list">
             <li class="header-navigation__item">
               <a href="index.html" class="header-navigation__link">
@@ -46,116 +46,101 @@
           Взгляните на жизнь иначе!
         </h2>
       </header>
-      <section class="main__download">
+      <section class="download">
         <h2 class="visually-hidden">Скачать приложение PINK</h2>
-        <a class="main__download-link" href="#">
+        <a class="download__link" href="#">
           Скачать приложение
         </a>
-        <ul class="main__download-list">
-          <li class="main__download-item">
-            <a class="visually-hidden" href="#">Скачать для iOS</a>
+        <ul class="download__list">
+          <li class="download__item">
+            <a class="download__item-link" href="#">
+              <span class="visually-hidden">Скачать для iOS</span>
+            </a>
           </li>
-          <li class="main__download-item">
-            <a class="visually-hidden" href="#">Скачать для Android</a>
+          <li class="download__item">
+            <a class="download__item-link" href="#">
+              <span class="visually-hidden">Скачать для Android</span>
+            </a>
           </li>
-          <li class="main__download-item">
-            <a class="visually-hidden" href="#">Скачать для Windows</a>
+          <li class="download__item">
+            <a class="download__item-link" href="#">
+              <span class="visually-hidden">Скачать для Windows</span>
+            </a>
           </li>
         </ul>
-        <p class="main__download-text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
-      <section class="main__specifications">
-        <h2 class="main__specifications-title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
-        <ul class="main__specifications-list">
-          <li class="main__specifications-item">
-            <p class="main__specifications-item-title">
+      <section class="specifications">
+        <h2 class="specifications__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
+        <ul class="specifications__list">
+          <li class="specifications__item">
+            <p class="specifications__item-title">
               Поднимает настроение
             </p>
-            <p class="main__specifications-item-text">
+            <p class="specifications__item-text">
               Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
             </p>
           </li>
-          <li class="main__specifications-item">
-            <p class="main__specifications-title">
+          <li class="specifications__item">
+            <p class="specifications__title">
               Меняет мир вокруг
             </p>
-            <p class="main__specifications-text">
+            <p class="specifications__text">
               Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
             </p>
           </li>
-          <li class="main__specifications-item">
-            <p class="main__specifications-title">
+          <li class="specifications__item">
+            <p class="specifications__title">
               Заводит новых друзей
             </p>
-            <p class="main__specifications-text">
+            <p class="specifications__text">
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
             </p>
           </li>
         </ul>
       </section>
-      <section class="main__comment">
-        <ul class="main__comment-list">
-          <li class="main__comment-item">
-            <p class="main__comment-name">
-              Николай Петров
-            </p>
-            <p class="main__comment-text">
-              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-            </p>
-          </li>
-        </ul>
-        <ol class="main__comment-switch">
-          <li class="main__comment-switch-item">
-            <button class="button-comment-switch button-comment-switch--current button" type="button">
-              <span class="visually-hidden">Первый отзыв</span>
-            </button>
-          </li>
-          <li class="main__comment-switch-item">
-            <button class="button-comment-switch button" type="button">
-              <span class="visually-hidden">Второй отзыв</span>
-            </button>
-          </li>
-          <li class="main__comment-switch-item">
-            <button class="button-comment-switch button" type="button">
-              <span class="visually-hidden">Третий отзыв</span>
-            </button>
-          </li>
-        </ol>
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы о приложении</h2>
+        <div class="reviews__list">
+          <blockquote class="reviews__item">
+            <cite class="reviews__name">Трэвис Баркер</cite>
+            <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+          </blockquote>
+        </div>
+        <p class="switch">
+          <button class="switch__button switch__button--current" type="button">1</button>
+          <button class="switch__button" type="button">2</button>
+          <button class="switch__button" type="button">3</button>
+        </p>
       </section>
-      <section class="main__tariff">
-        <table class="main__tariff-table">
+      <section class="tariff">
+        <h2 class="visually-hidden">Тарифы</h2>
+        <table class="tariff__table">
 
         </table>
+        <p class="switch">
+          <button class="switch__button switch__button--current" type="button">1</button>
+          <button class="switch__button" type="button">2</button>
+          <button class="switch__button" type="button">3</button>
+        </p>
       </section>
-      <section class="main__contacts">
-        <h2 class="main__contacts-title">Остались вопросы? Свяжитесь с нами!</h2>
-        <ul class="main__contacts-list">
-          <li class="main__contacts-item">
-            <p class="main__contacts-title">
-              Звоните:
-            </p>
-            <p class="main__contacts-text">
-              +7 (812) 555-66-66
-            </p>
-          </li>
-          <li class="main__contacts-item">
-            <p class="main__contacts-title">
-              Пишите:
-            </p>
-            <p class="main__contacts-text">
-              mail@htmlacademy.ru
-            </p>
-          </li>
-          <li class="main__contacts-item">
-            <p class="main__contacts-title">
-              Приезжайте в гости:
-            </p>
-            <p class="main__contacts-text">
-              ул. Большая Конюшенная, 19/8
-            </p>
-          </li>
-        </ul>
-        <div class="main__map">
+      <section class="contacts">
+        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+        <div class="contacts__requisites">
+          <div class="requisite">
+            <b class="requisite__title">Звоните:</b>
+            <a class="phone" href="tel:88125556666">+7 (812) 555-66-66</a>
+          </div>
+          <div class="requisite">
+            <b class="requisite__title">Пишите:</b>
+            <p class="requisite__text">mail@htmlacademy.ru</p>
+          </div>
+          <div class="requisite">
+            <b class="requisite__title">Приезжайте в гости:</b>
+            <p class="requisite__text">ул. Большая Конюшенная, 19/8</p>
+          </div>
+        </div>
+        <div class="contacts__map">
 
         </div>
       </section>
@@ -165,25 +150,25 @@
         <svg></svg>
         <svg></svg>
       </div>
-      <ul class="footer__social-list">
-        <li class="footer__social-item">
-          <a class="footer__social-link" href="#">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="#">
             <span class="visually-hidden">Twitter</span>
           </a>
         </li>
-        <li class="footer__social-item">
-          <a class="footer__social-link" href="#">
+        <li class="social__item">
+          <a class="social__link" href="#">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
-        <li class="footer__social-item">
-          <a class="footer__social-link" href="#">
+        <li class="social__item">
+          <a class="social__link" href="#">
             <span class="visually-hidden">YouTube</span>
           </a>
         </li>
       </ul>
-      <div class="footer__designed">
-        <span class="footer__designed-text">Разработано</span>
+      <div class="designed">
+        <span class="designed__text">Разработано</span>
       </div>
     </footer>
   </body>
