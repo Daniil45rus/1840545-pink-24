@@ -3,40 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="body">
     <header class="header">
       <a href="index.html" class="header__logo">
         <svg></svg>
       </a>
-      <nav class="header-navigation">
-        <button class="header-navigation__toggle" type="button">
+      <nav class="navigation">
+        <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="wrapper">
-          <ul class="header-navigation__list">
-            <li class="header-navigation__item">
-              <a href="index.html" class="header-navigation__link">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">
                 главная
-              </a>
-            </li>
-            <li class="header-navigation__item">
-              <a href="catalog.html" class="header-navigation__link">
-                фотографии
-              </a>
-            </li>
-            <li class="header-navigation__item">
-              <a href="form.html" class="header-navigation__link">
-                конкурс
-              </a>
-            </li>
-            <li class="header-navigation__item">
-              <a href="#" class="header-navigation__link">
-                html academy
-              </a>
-            </li>
-          </ul>
-        </div>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">
+              фотографии
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">
+              конкурс
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">
+              html academy
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="main">
@@ -82,7 +81,7 @@
             </p>
           </li>
           <li class="specifications__item">
-            <p class="specifications__title">
+            <p class="specifications__item-title">
               Меняет мир вокруг
             </p>
             <p class="specifications__text">
@@ -90,7 +89,7 @@
             </p>
           </li>
           <li class="specifications__item">
-            <p class="specifications__title">
+            <p class="specifications__item-title">
               Заводит новых друзей
             </p>
             <p class="specifications__text">
@@ -103,40 +102,106 @@
         <h2 class="visually-hidden">Отзывы о приложении</h2>
         <div class="reviews__list">
           <blockquote class="reviews__item">
-            <cite class="reviews__name">Трэвис Баркер</cite>
-            <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+            <cite class="reviews__name">Николай Петров</cite>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
         </div>
         <p class="switch">
-          <button class="switch__button switch__button--current" type="button">1</button>
-          <button class="switch__button" type="button">2</button>
-          <button class="switch__button" type="button">3</button>
+          <a class="switch__button switch__button--current" href="#">1</a>
+          <a class="switch__button" href="#">2</a>
+          <a class="switch__button" href="#">3</a>
         </p>
       </section>
       <section class="tariff">
         <h2 class="visually-hidden">Тарифы</h2>
-        <table class="tariff__table">
-
+        <table class="table">
+          <tr class="table__row">
+            <td class="table__data table__data--clear ">
+            </td>
+            <th class="table__head table__head--first">
+              <h4 class="table__title">
+                база
+              </h4>
+              <p class="table__title-text">
+                1,99 USD
+              </p>
+            </th>
+            <th class="table__head">
+              <h4 class="table__title">
+                стандарт
+              </h4>
+              <p class="table__title-text">
+                3,99 USD
+              </p>
+            </th>
+            <th class="table__head table__head--last">
+              <h4 class="table__title">
+                анлим
+              </h4>
+              <p class="table__title-text">
+                9,99 USD
+              </p>
+            </th>
+          </tr>
+          <tr class="table__row">
+            <td class="table__data table__data--lt">
+              <p class="table__text">
+                Розовый фильтр
+              </p>
+            </td>
+            <td class="table__data table__data--yes ">
+            </td>
+            <td class="table__data table__data--yes">
+            </td>
+            <td class="table__data table__data--yes table__data--rt">
+            </td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__data">
+              <p class="table__text">
+                Смайлики
+              </p>
+            </td>
+            <td class="table__data table__data--no">
+            </td>
+            <td class="table__data table__data--yes">
+            </td>
+            <td class="table__data table__data--yes">
+            </td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__data table__data--lb">
+              <p class="table__text">
+                Комментарии
+              </p>
+            </td>
+            <td class="table__data table__data--no">
+            </td>
+            <td class="table__data table__data--no">
+            </td>
+            <td class="table__data table__data--yes table__data--rb">
+            </td>
+          </tr>
         </table>
         <p class="switch">
-          <button class="switch__button switch__button--current" type="button">1</button>
-          <button class="switch__button" type="button">2</button>
-          <button class="switch__button" type="button">3</button>
+          <a class="switch__button switch__button--current" href="#">1</a>
+          <a class="switch__button" href="#">2</a>
+          <a class="switch__button" href="#">3</a>
         </p>
       </section>
       <section class="contacts">
         <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
         <div class="contacts__requisites">
           <div class="requisite">
-            <b class="requisite__title">Звоните:</b>
-            <a class="phone" href="tel:88125556666">+7 (812) 555-66-66</a>
+            <h3 class="requisite__title">Звоните:</h3>
+            <a class="requisite__text requisite__text--phone" href="tel:88125556666">+7 (812) 555-66-66</a>
           </div>
           <div class="requisite">
-            <b class="requisite__title">Пишите:</b>
+            <h3 class="requisite__title">Пишите:</h3>
             <p class="requisite__text">mail@htmlacademy.ru</p>
           </div>
           <div class="requisite">
-            <b class="requisite__title">Приезжайте в гости:</b>
+            <h3 class="requisite__title">Приезжайте в гости:</h3>
             <p class="requisite__text">ул. Большая Конюшенная, 19/8</p>
           </div>
         </div>
@@ -150,7 +215,7 @@
         <svg></svg>
         <svg></svg>
       </div>
-      <ul class="social__list">
+      <ul class="social">
         <li class="social__item">
           <a class="social__link" href="#">
             <span class="visually-hidden">Twitter</span>

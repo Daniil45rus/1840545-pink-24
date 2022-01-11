@@ -3,40 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="body">
     <header class="header">
       <a href="index.html" class="header__logo">
         <svg></svg>
       </a>
-      <nav class="header-navigation">
-        <button class="header-navigation__toggle" type="button">
+      <nav class="navigation">
+        <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="wrapper">
-          <ul class="header-navigation__list">
-            <li class="header-navigation__item">
-              <a href="index.html" class="header-navigation__link">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">
                 главная
-              </a>
-            </li>
-            <li class="header-navigation__item">
-              <a href="catalog.html" class="header-navigation__link">
-                фотографии
-              </a>
-            </li>
-            <li class="header-navigation__item">
-              <a href="form.html" class="header-navigation__link">
-                конкурс
-              </a>
-            </li>
-            <li class="header-navigation__item">
-              <a href="#" class="header-navigation__link">
-                html academy
-              </a>
-            </li>
-          </ul>
-        </div>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">
+              фотографии
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">
+              конкурс
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">
+              html academy
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="main">
@@ -46,7 +45,7 @@
           Фотографии пользователей
         </h2>
       </header>
-      <div class="catalog__photo">
+      <div class="catalog">
         <p class="catalog__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <ul class="catalog__list">
           <li class="catalog__post">
@@ -134,7 +133,7 @@
         </ul>
         <p class="catalog__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       </div>
-      <div class="catalog__redactor">
+      <form class="redactor" action="https://echo.htmlacademy.ru/" method="get">
         <img class="redactor__photo">
         <div class="redactor__tools">
           <div class="redactor__tool redactor__tool--current">
@@ -150,9 +149,9 @@
             <input class="redactor__regulator" type="range" name="light">
           </div>
         </div>
-        <button class="redactor__button redactor__button--post">Запостить</button>
-        <button class="redactor__button redactor__button--cancel">Отмена</button>
-      </div>
+        <button class="redactor__button redactor__button--post" type="submit">Запостить</button>
+        <button class="redactor__button redactor__button--cancel" type="reset">Отмена</button>
+      </form>
     </main>
     <footer class="footer">
       <div class="footer__logo">
