@@ -1,0 +1,46 @@
+.form__set {
+  &--bg {
+    background-color: #f2f2f2;
+  }
+}
+
+.form__label,
+.form__title {
+  color: #d22856;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.form__title {
+  line-height: 18px;
+}
+
+.form__text {
+  font-size: 18px;
+  line-height: 30px;
+
+  &::placeholder {
+    color: #283645;
+  }
+}
+
+.form__label-text {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  text-transform: none;
+}
+
+.form__button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 13px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #2aab6d;
+  border: 2px solid #2aab6d;
+  border-radius: 1px;
+  padding: 0;
+  padding: 23px 45px;
+}
