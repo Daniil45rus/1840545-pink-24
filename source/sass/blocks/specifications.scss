@@ -1,9 +1,15 @@
 .specifications {
-
+  background-color: $base-bg;
 }
 
 .specifications__list {
-  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .specifications__title {

@@ -1,14 +1,14 @@
-.redactor {
-  background-color: #f2f2f2;
+.editor {
+  background-color: $base-bg;
 }
 
-.redactor__button {
+.editor__button {
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
 
   &--post {
-    color: #d22856;
+    color: $rare-color;
   }
 
   &--cancel {
