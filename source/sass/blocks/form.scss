@@ -1,6 +1,41 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
 .form__set {
   &--bg {
     background-color: $base-bg;
+  }
+
+  &:nth-child(1) {
+    @media (min-width: $tablet-width) {
+      order: 1;
+    }
+  }
+
+  &:nth-child(2) {
+    @media (min-width: $tablet-width) {
+      order: 4;
+    }
+  }
+
+  &:nth-child(3) {
+    @media (min-width: $tablet-width) {
+      order: 3;
+    }
+  }
+
+  &:nth-child(4) {
+    @media (min-width: $tablet-width) {
+      order: 2;
+    }
+  }
+
+  &:nth-child(5) {
+    @media (min-width: $tablet-width) {
+      order: 5;
+    }
   }
 }
 
@@ -41,6 +76,9 @@
   background: #2aab6d;
   border: 2px solid #2aab6d;
   border-radius: 1px;
-  padding: 0;
   padding: 23px 45px;
+
+  @media (min-width: $tablet-width) {
+    order: 6;
+  }
 }
