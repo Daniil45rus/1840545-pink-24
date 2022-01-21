@@ -7,7 +7,7 @@
 }
 
 .catalog__post-content {
-  background-color: #f2f2f2;
+  background-color: $base-bg;
 }
 
 .catalog__post-time {
@@ -17,5 +17,5 @@
 
 .catalog__post-like {
   font-size: 12px;
-  color: #d22856;
+  color: $rare-color;
 }

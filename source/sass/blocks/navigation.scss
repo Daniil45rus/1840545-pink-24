@@ -1,0 +1,29 @@
+.navigation {
+  background-color: #283645;
+}
+
+.navigation__toggle {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.navigation__link {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 620px;
+  }
+}

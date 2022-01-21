@@ -2,8 +2,7 @@
   font-family: "OpenSans";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/opensans.woff") format("woff");
-  src: url("../../fonts/opensans.woff2") format("woff2");
+  src: url("../../fonts/opensans.woff2") format("woff2"), ("../../fonts/opensans.woff");
   font-display: swap;
 }
 
@@ -11,8 +10,7 @@
   font-family: "Opensans";
   font-style: normal;
   font-weight: 700;
-  src: url("../../fonts/opensansbold.woff") format("woff");
-  src: url("../../fonts/opensansbold.woff2") format("woff2");
+  src: url("../../fonts/opensansbold.woff2") format("woff2"), ("../../fonts/opensansbold.woff");
   font-display: swap;
 }
 
@@ -20,8 +18,7 @@
   font-family: "Opensans";
   font-style: normal;
   font-weight: 300;
-  src: url("../../fonts/opensanslight.woff") format("woff");
-  src: url("../../fonts/opensanslight.woff2") format("woff2");
+  src: url("../../fonts/opensanslight.woff2") format("woff2"), ("../../fonts/opensanslight.woff");
   font-display: swap;
 }
 
@@ -34,11 +31,9 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: "OpenSans", sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: #283645;
   background-color: #ffffff;
-  min-width: 320px;
-  max-width: 1200px;
 }
