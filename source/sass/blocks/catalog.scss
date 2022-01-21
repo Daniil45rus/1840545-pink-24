@@ -2,8 +2,31 @@
 
 }
 
+.catalog__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .catalog__text {
   line-height: 30px;
+}
+
+.catalog__post {
+  width: 280px;
+
+  &:nth-child(1) {
+    width: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
 }
 
 .catalog__post-content {

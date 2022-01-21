@@ -46,7 +46,7 @@
           Фотографии пользователей
         </h2>
       </header>
-      <div class="catalog">
+      <div class="catalog wrapper">
         <p class="catalog__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <ul class="catalog__list">
           <li class="catalog__post">
@@ -134,7 +134,7 @@
         </ul>
         <p class="catalog__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       </div>
-      <form class="editor" action="https://echo.htmlacademy.ru/" method="get">
+      <form class="editor wrapper" action="https://echo.htmlacademy.ru/" method="get">
         <img class="editor__photo">
         <div class="editor__tools">
           <div class="editor__tool editor__tool--current">
@@ -149,35 +149,38 @@
             <svg></svg>
             <input class="editor__regulator" type="range" name="light">
           </div>
+          <div class="editor__buttons">
+            <button class="editor__button editor__button--post" type="submit">Запостить</button>
+            <button class="editor__button editor__button--cancel" type="reset">Отмена</button>
+          </div>
         </div>
-        <button class="editor__button editor__button--post" type="submit">Запостить</button>
-        <button class="editor__button editor__button--cancel" type="reset">Отмена</button>
       </form>
     </main>
     <footer class="footer">
-      <div class="footer__logo">
-        <svg></svg>
-        <svg></svg>
-      </div>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <span class="visually-hidden">Twitter</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <span class="visually-hidden">YouTube</span>
-          </a>
-        </li>
-      </ul>
-      <div class="designed">
-        <span class="designed__text">Разработано</span>
+      <div class="footer__wrapper wrapper">
+        <div class="footer__logo">
+          <svg></svg>
+        </div>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">YouTube</span>
+            </a>
+          </li>
+        </ul>
+        <div class="designed">
+          <span class="designed__text">Разработано</span>
+        </div>
       </div>
     </footer>
   </body>
