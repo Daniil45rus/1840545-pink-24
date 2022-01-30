@@ -57,11 +57,15 @@
   }
 
   &--yes {
-    background-image: url();
+    background-image: url(../img/yes.svg);
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   &--no {
-    background-image: url();
+    background-image: url(../img/no.svg);
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 

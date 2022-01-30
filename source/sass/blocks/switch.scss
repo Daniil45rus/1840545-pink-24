@@ -1,7 +1,33 @@
 .switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+  }
+
   &--table {
     @media (min-width: $tablet-width) {
       display: none;
     }
+  }
+}
+
+.switch__button {
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: rgba($color: #283645, $alpha: 0.3);
+  border-radius: 50%;
+
+  &:not(:last-child) {
+    margin-right: 19px;
+  }
+
+  &--current {
+    background-color: #ffffff;
+    border: 3px solid #283645;
   }
 }

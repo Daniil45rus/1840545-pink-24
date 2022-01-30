@@ -4,11 +4,23 @@
 }
 
 .form__set {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $mobile-width-only) {
+    border: none;
+    padding: 42px 0 44px;
+  }
+
   &--bg {
     background-color: $base-bg;
   }
 
   &:nth-child(1) {
+    border: none;
+
     @media (min-width: $tablet-width) {
       order: 1;
     }
@@ -45,6 +57,10 @@
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.form__label:not(:last-child) {
+  margin-bottom: 29px;
 }
 
 .form__title {
