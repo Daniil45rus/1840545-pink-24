@@ -1,10 +1,12 @@
-.reviews__wrapper {
-
+.reviews {
+  padding-top: 50px;
 }
 
 .reviews__item {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  margin: 0;
 }
 
 
@@ -16,14 +18,29 @@
   font-style: normal;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
     order: 2;
   }
 }
 
-.reviews__info{
+.reviews__info {
+  display: none;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0;
 
+  @media (min-width: $tablet-width) {
+    display: block;
+    order: 3;
+  }
 }
 
 .reviews__text {
   line-height: 30px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    order: 1;
+  }
 }

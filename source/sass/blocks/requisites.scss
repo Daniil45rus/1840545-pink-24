@@ -1,7 +1,40 @@
 .requisites {
   @media (min-width: $tablet-width) {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
+  }
+}
+
+.requisites__item {
+  &:not(:last-child) {
+    margin-bottom: 35px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 55px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.requisites__item:nth-child(1) {
+  @media (min-width: $desktop-width) {
+    order: 1;
+  }
+}
+
+.requisites__item:nth-child(2) {
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
+}
+
+.requisites__item:nth-child(3) {
+  @media (min-width: $desktop-width) {
+    order: 2;
   }
 }
 
@@ -9,12 +42,17 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 13px;
 }
 
 .requisites__text {
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
+  text-align: center;
+  margin: 0;
   color: $rare-color;
 
   &--phone {
