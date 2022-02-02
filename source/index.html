@@ -9,7 +9,7 @@
   <body class="body">
     <header class="header">
       <a href="index.html" class="header__logo">
-        <img width="74" height="23" src="img/pink.svg" alt="PINK">
+        <img class="header__logotype" width="74" height="23" src="img/pink.svg" alt="PINK">
       </a>
       <nav class="navigation navigation--closed navigation--nojs">
         <button class="navigation__toggle" type="button">
@@ -18,22 +18,22 @@
         <ul class="navigation__list">
           <li class="navigation__item">
             <a class="navigation__link" href="index.html">
-                главная
+                Главная
             </a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="catalog.html">
-              фотографии
+              Фотографии
             </a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="form.html">
-              конкурс
+              Конкурс
             </a>
           </li>
           <li class="navigation__item">
             <a href="#" class="navigation__link">
-              html academy
+              HTML academy
             </a>
           </li>
         </ul>
@@ -74,7 +74,7 @@
       </section>
       <section class="specifications">
         <div class="wrapper">
-          <h2 class="specifications__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
+          <h2 class="specifications__title">Устали от серости мегаполиса?<br>Нам есть, что вам<br>предложить!</h2>
         </div>
         <ul class="specifications__list">
           <div class="specifications__wrapper wrapper">
@@ -139,7 +139,7 @@
           <h2 class="visually-hidden">Тарифы</h2>
           <table class="table">
             <tr class="table__row">
-              <td class="table__data table__data--clear ">
+              <td class="table__data table__data--clear table__data--nm ">
               </td>
               <th class="table__head table__head--first">
                 <h4 class="table__title">
@@ -167,7 +167,7 @@
               </th>
             </tr>
             <tr class="table__row">
-              <td class="table__data table__data--lt">
+              <td class="table__data table__data--lt table__data--nm">
                 <p class="table__text">
                   Розовый фильтр
                 </p>
@@ -180,7 +180,7 @@
               </td>
             </tr>
             <tr class="table__row">
-              <td class="table__data">
+              <td class="table__data table__data--nm">
                 <p class="table__text">
                   Смайлики
                 </p>
@@ -193,7 +193,7 @@
               </td>
             </tr>
             <tr class="table__row">
-              <td class="table__data table__data--lb">
+              <td class="table__data table__data--lb table__data--nm">
                 <p class="table__text">
                   Комментарии
                 </p>
@@ -206,10 +206,22 @@
               </td>
             </tr>
           </table>
-          <p class="switch switch--table">
-            <a class="switch__button" href="#">1</a>
-            <a class="switch__button switch__button--current" href="#">2</a>
-            <a class="switch__button" href="#">3</a>
+          <p class="switch">
+            <a class="switch__button switch__button--current" href="#">
+              <span class="visually-hidden">
+                1
+              </span>
+            </a>
+            <a class="switch__button" href="#">
+              <span class="visually-hidden">
+                2
+              </span>
+            </a>
+            <a class="switch__button" href="#">
+              <span class="visually-hidden">
+                3
+              </span>
+            </a>
           </p>
         </div>
       </section>
