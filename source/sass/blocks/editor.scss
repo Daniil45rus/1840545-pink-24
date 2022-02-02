@@ -1,31 +1,207 @@
 .editor {
   background-color: $base-bg;
+  padding: 20px 0 41px;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: rgba($color: #283645, $alpha: 0.1);
+      position: absolute;
+      bottom: 190px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 57px 60px 57px 80px;
+    width: 800px;
+    margin: 0 auto;
+  }
+}
+
+
+.editor__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 275px;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+  }
+}
+
+.editor .wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.editor__photo {
+  margin-bottom: 43px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 400px;
+    margin: 0;
+  }
+}
+
+.editor__tools {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 54px;
+  }
+}
+
+.editor__tool {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding-right: 18px;
+    justify-content: space-between;
+    padding-bottom: 29px;
+    align-items: center;
+
+    &:not(:first-child) {
+      margin-top: 27px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: rgba($color: #283645, $alpha: 0.1);
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:last-child::before {
+      display: none;
+    }
+  }
+}
+
+.editor__tool--current .editor__icon {
+  position: relative;
+  opacity: 1;
+  fill: $rare-color;
+}
+
+.editor__icon {
+  width: 48px;
+  height: 48px;
+  opacity: 0.3;
+  fill: #283645;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    fill: $rare-color;
+    opacity: 1;
+    width: 24px;
+    height: 24px;
+    padding-left: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.editor__regulator {
+  display: none;
+  width: 240px;
+  height: 2px;
+
+  &--current {
+    display: block;
+
+    @media (max-width: $mobile-width-only) {
+      position: absolute;
+      right: 20px;
+      top: 60px;
+      left: 0;
+    }
+  }
+
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
   }
 }
 
 .editor__buttons {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
 .editor__button {
   font-weight: bold;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 13px;
+  width: 280px;
+  height: 55px;
+  border: 3px solid #283645;
+  border-radius: 30px;
+  box-sizing: border-box;
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
 
   &--post {
     color: $rare-color;
+    border-color: $rare-color;
   }
 
   &--cancel {
     opacity: 0.1;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 183px;
   }
 }

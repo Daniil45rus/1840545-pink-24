@@ -4,7 +4,14 @@
 
   @media (min-width: $tablet-width) {
     background-color: inherit;
-    margin-top: -300px;
+    margin-top: -320px;
+    margin-left: -330px;
+    margin-bottom: 60px;
+    z-index: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -700px;
   }
 }
 
@@ -27,6 +34,19 @@
   box-sizing: border-box;
   border-radius: 29px;
   width: 280px;
+
+  &:hover {
+    color: $rare-color;
+    background: #FFFFFF;
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0 5px 7px rgba(1, 1, 1, 0.75);
+    border-radius: 30px;
+  }
+
+  &:active {
+    color: rgba($color: $rare-color, $alpha: 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     width: 300px;

@@ -3,6 +3,10 @@
   flex-direction: column;
   flex-grow: 1;
   margin-top: -66px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -110px;
+  }
 }
 
 .main__header {
@@ -11,6 +15,7 @@
   background-size: 100%;
   align-items: center;
   height: 300px;
+  position: relative;
 
   &--index {
     height: 462px;
@@ -24,18 +29,40 @@
       background-image: url(../img/phone.png);
       background-repeat: no-repeat;
       top: 176px;
+      background-size: 100%;
     }
 
     &::after {
       content: "";
       display: block;
       position: relative;
-      width: auto;
-      height: 286px;
+      width: 111px;
+      height: 197px;
       background-image: url(../img/screen.png);
       background-repeat: no-repeat;
       top: -136px;
       left: 104px;
+      background-size: 100%;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--index {
+      height: 730px;
+
+      &::before {
+        width: 660px;
+        height: 545px;
+        top: 185px;
+        left: 115px;
+      }
+
+      &::after {
+        width: 195px;
+        height: 346px;
+        top: -136px;
+        left: 104px;
+      }
     }
   }
 }
@@ -52,7 +79,7 @@
   text-align: center;
 
   &--index {
-    top: -200px;
+    top: -190px;
   }
 
   @media (min-width: $tablet-width) {
@@ -60,6 +87,9 @@
     line-height: 48px;
     width: 300px;
     margin-right: auto;
+    z-index: 2;
+    top: -300px;
+    left: -164px;
   }
 }
 

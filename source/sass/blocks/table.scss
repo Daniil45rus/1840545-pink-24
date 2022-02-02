@@ -1,12 +1,20 @@
 .table {
   background-color: #ffffff;
   border-collapse: collapse;
+  width: 100%;
+
+  @media (max-width: $mobile-width-only) {
+    width: 300%;
+    transform: translateX(-33%);
+  }
 }
 
 .table__head {
   background: #283645;
   border: 2px solid #283645;
   color: #ffffff;
+  width: 276px;
+  height: 94px;
 
   &--first {
     border-radius: 1px 0 0 0;
@@ -34,6 +42,8 @@
 .table__data {
   background: #ffffff;
   border: 2px solid #e5e5e5;
+  width: 156px;
+  height: 45px;
 
   &--clear {
     background-color: $base-bg;
@@ -66,6 +76,15 @@
     background-image: url(../img/no.svg);
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 276px;
+    height: 56px;
+
+    &--nm {
+      display: none;
+    }
   }
 }
 

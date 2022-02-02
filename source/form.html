@@ -49,25 +49,65 @@
       <div class="form-contest">
         <p class="form-contest__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
         <form class="form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="form__set form__set--text">
+          <fieldset class="form__set form__set--text form__set--nb">
             <div class="wrapper">
               <label class="form__label">
-                фамилия:
+                <span>фамилия:</span>
                 <input class="form__text" type="text" name="surname" placeholder="Укажите фамилию *">
               </label>
               <label class="form__label">
-                имя:
+                <span>имя:</span>
                 <input class="form__text" type="text" name="name" placeholder="Введите ваше имя *">
               </label>
               <label class="form__label">
-                отчество:
+                <span>отчество:</span>
                 <input class="form__text" type="text" name="patronymic" placeholder="Ну и отчество тоже">
               </label>
             </div>
           </fieldset>
-          <fieldset class="form__set form__set--bg">
+          <fieldset class="form__set form__set--radio form__set--bg">
             <div class="wrapper">
-              <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
+              <h3 class="form__title">С каким приложением путешествовали?</h3>
+              <ul class="form__list">
+                <li class="form__item">
+                  <label class="form__label">
+                    <input class="form__mark" type="radio" name="phone-OS" value="iOS">
+                    <span class="form__label-text">Pink для iOS</span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__label">
+                    <input class="form__mark" type="radio" name="phone-OS" value="Android">
+                    <span class="form__label-text">Pink для Android</span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__label">
+                    <input class="form__mark" type="radio" name="phone-OS" value="Windows">
+                    <span class="form__label-text">Windows phone</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="form__set form__set--swap form__set--text">
+            <div class="wrapper">
+              <h3 class="form__title form__title--change">контактная информация</h3>
+              <div class="form__wrapper">
+                <label class="form__label form__label--phone">
+                  <span>НОМЕР ТЕЛЕФОНА</span>
+                  <input class="form__text" type="tel" name="tel" placeholder="Номер, пожалуйста">
+                </label>
+                <label class="form__label form__label--mail">
+                  <span>АДРЕС ПОЧТЫ</span>
+                  <input class="form__text" type="email" name="mail" placeholder="Введите почту *">
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="form__set form__set--checkbox form__set--bg">
+            <div class="wrapper">
+              <h3 class="form__title">Ваши безбашенные достижения в путешествии</h3>
               <ul class="form__list">
                 <li class="form__item">
                   <label class="form__label">
@@ -108,42 +148,19 @@
               </ul>
             </div>
           </fieldset>
-          <fieldset class="form__set">
+          <fieldset class="form__set form__set--area">
             <div class="wrapper">
-              <p class="form__title">НОМЕР ТЕЛЕФОНА</p>
-              <input class="form__text" type="tel" name="tel" placeholder="Номер, пожалуйста">
-              <p class="form__title">АДРЕС ПОЧТЫ</p>
-              <input class="form__text" type="email" name="mail" placeholder="Введите почту *">
+              <h3 class="form__title form__title--comment">опишите свои эмоции</h3>
+              <textarea class="form__comment" type="text" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           </fieldset>
-          <fieldset class="form__set form__set--bg">
-            <div class="wrapper">
-              <legend class="form__title form__title--group">С каким приложением путешествовали?</legend>
-              <ul class="form__list">
-                <li class="form__item">
-                  <input class="form__mark" type="radio" name="phone-OS" value="iOS">
-                  <span class="form__label-text">Pink для iOS</span>
-                </li>
-                <li class="form__item">
-                  <input class="form__mark" type="radio" name="phone-OS" value="android">
-                  <span class="form__label-text">Pink на Android</span>
-                </li>
-                <li class="form__item">
-                  <input class="form__mark" type="radio" name="phone-OS" value="windows">
-                  <span class="form__label-text">Windows Phone</span>
-                </li>
-              </ul>
+          <div class="wrapper">
+            <div class="form__button-wrapper">
+              <button class="form__button" type="submit">Отправить форму</button>
+              <p class="form-contest__prevention"><span style="color: #d22856;">*</span> — обязательные поля</p>
             </div>
-          </fieldset>
-          <fieldset class="form__set">
-            <div class="wrapper">
-              <p class="form__title form__title--comment">ОПИШИТЕ СВОИ ЭМОЦИИ</p>
-              <textarea class="form__text" type="text" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </div>
-          </fieldset>
-          <button class="form__button" type="submit">Отправить форму</button>
+          </div>
         </form>
-        <p class="form-contest__text">* — обязательные поля</p>
       </div>
     </main>
     <footer class="footer">
