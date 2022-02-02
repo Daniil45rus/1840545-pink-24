@@ -1,36 +1,97 @@
-.catalog {
-
-}
-
 .catalog__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 300px);
   }
 }
 
 .catalog__text {
   line-height: 30px;
+  text-align: center;
+  margin: 55px 0 60px;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    margin: 100px 0 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 97px;
+  }
 }
 
 .catalog__post {
+  display: flex;
+  flex-direction: column;
   width: 280px;
+  position: relative;
 
-  &:nth-child(1) {
-    width: 100%;
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 20px;
   }
 
   @media (min-width: $tablet-width) {
     width: 300px;
+
+    &:nth-child(1) {
+      grid-column: 1 / -1;
+      width: 100%;
+    }
+  }
+}
+
+.catalog__panorama {
+  height: 127px;
+  position: relative;
+  size: 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 510px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 505px;
+  }
+}
+
+.catalog__photo {
+  &--panorama {
+    position: absolute;
+    left: -20px;
+    top: 0;
   }
 }
 
 .catalog__post-content {
   background-color: $base-bg;
+  padding: 25px 0;
+  padding-left: 17px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    height: 155px;
+    padding: 30px;
+  }
+}
+
+.catalog__post-info {
+  margin-bottom: 14px;
+}
+
+.catalog__post-text {
+  margin: 0;
+  margin-bottom: 27px;
 }
 
 .catalog__post-time {
@@ -39,6 +100,32 @@
 }
 
 .catalog__post-like {
+  margin: 0;
+  padding-left: 31px;
   font-size: 12px;
   color: $rare-color;
+  position: relative;
+  margin-top: auto;
+
+  &::before {
+    content: "";
+    display: block;
+    background-image: url(../img/heart.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    width: 13px;
+    height: 12px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      left: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
