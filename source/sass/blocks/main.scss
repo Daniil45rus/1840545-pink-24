@@ -10,11 +10,15 @@
 }
 
 .main__header {
-  background-image: url(../img/building.png);
+  background-image: url(../img/building-m.png);
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/building-m@2x.png);
+  }
   background-repeat: no-repeat;
   background-size: 100%;
   align-items: center;
-  height: 300px;
+  height: 237px;
   position: relative;
 
   &--index {
@@ -24,72 +28,122 @@
       content: "";
       display: block;
       position: relative;
-      width: auto;
       height: 286px;
-      background-image: url(../img/phone.png);
+      background-image: url(../img/phone-m.png);
       background-repeat: no-repeat;
-      top: 176px;
-      background-size: 100%;
-    }
+      bottom: -175px;
 
-    &::after {
-      content: "";
-      display: block;
-      position: relative;
-      width: 111px;
-      height: 197px;
-      background-image: url(../img/screen.png);
-      background-repeat: no-repeat;
-      top: -136px;
-      left: 104px;
-      background-size: 100%;
+      @media (min-resolution: 2dppx) {
+        background-image: url(../../img/phone-m@2x.png);
+        background-size: 320px auto;
+      }
     }
   }
 
   @media (min-width: $tablet-width) {
-    &--index {
-      height: 730px;
+    height: 440px;
+    background-image: url(../img/building-tab.png);
 
-      &::before {
-        width: 660px;
-        height: 545px;
-        top: 185px;
-        left: 115px;
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/building-tab@2x.png);
+    }
+
+    &--index {
+      height: 729px;
+      background-image: url(../img/building-t.png);
+
+      @media (min-resolution: 2dppx) {
+        background-image: url(../img/building-t@2x.png);
       }
 
-      &::after {
-        width: 195px;
-        height: 346px;
-        top: -136px;
-        left: 104px;
+      &::before {
+        height: 545px;
+        background-image: url(../img/phone-t.png);
+
+        @media (min-resolution: 2dppx) {
+          background-image: url(../img/phone-t@2x.png);
+          background-size: 660px auto;
+        }
+        top: 185px;
+        left: 0;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 394px;
+    background-image: url(../img/building-desk.png);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/building-desk@2x.png);
+    }
+
+    &--index {
+      background-image: url(../img/building-d.png);
+
+      @media (min-resolution: 2dppx) {
+        background-image: url(../img/building-d@2x.png);
+      }
+      height: 853px;
+
+      &::before {
+        background-image: url(../img/phone-d.png);
+
+        @media (min-resolution: 2dppx) {
+          background-image: url(../img/phone-d@2x.png);
+          background-size: 1050px auto;
+        }
+        width: 1050px;
+        height: 645px;
+        top: 208px;
+        left: 150px;
       }
     }
   }
 }
 
 .main__header-title {
-  position: relative;
   width: 280px;
   color: #ffffff;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
   margin: 0 auto;
-  top: 125px;
+  margin-top: 99px;
+  top: 102px;
   text-align: center;
 
   &--index {
-    top: -190px;
+    width: 280px;
+    top: -289px;
+    position: relative;
   }
 
   @media (min-width: $tablet-width) {
+    &--form {
+      width: 500px;
+    }
     font-size: 40px;
     line-height: 48px;
-    width: 300px;
-    margin-right: auto;
+    margin-top: 191px;
     z-index: 2;
-    top: -300px;
-    left: -164px;
+    top: -531px;
+    left: -163px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--catalog {
+      width: 358px;
+    }
+
+    &--form {
+      width: 747px;
+    }
+    font-size: 50px;
+    line-height: 68px;
+    margin-top: 184px;
+    top: -626px;
+    left: -328px;
   }
 }
 
