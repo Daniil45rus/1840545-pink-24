@@ -136,18 +136,19 @@
 }
 
 .editor__regulator {
+  background-color: #283645;
   display: none;
   width: 240px;
   height: 2px;
+  position: relative;
 
   &--current {
     display: block;
 
     @media (max-width: $mobile-width-only) {
       position: absolute;
-      right: 20px;
+      right: -95px;
       top: 60px;
-      left: 0;
     }
   }
 
@@ -160,6 +161,17 @@
   @media (min-width: $desktop-width) {
     width: 288px;
   }
+}
+
+.editor__toggle {
+  width: 14px;
+  height: 14px;
+  border: 2px solid $rare-color;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  top: -5px;
 }
 
 .editor__buttons {

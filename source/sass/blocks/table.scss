@@ -15,13 +15,30 @@
   color: #ffffff;
   width: 276px;
   height: 94px;
+  padding: 19px 0 35px;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
 
   &--first {
     border-radius: 1px 0 0 0;
+    border-left: none;
   }
 
   &--last {
     border-radius: 0 1px 0 0;
+    border-right: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 152px;
+    height: 40px;
+    padding: 19px 0 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 234px;
+    height: 46px;
+    padding: 23px 0 25px;
   }
 }
 
@@ -31,12 +48,14 @@
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
+  margin: 0 0 15px;
 }
 
 .table__title-text {
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
+  margin: 0;
 }
 
 .table__data {
@@ -80,14 +99,44 @@
 
   @media (max-width: $mobile-width-only) {
     width: 276px;
-    height: 56px;
+    height: 59px;
 
     &--nm {
       display: none;
     }
+
+    &--yes {
+      background-position-x: 228px;
+    }
+
+    &--no {
+      background-position-x: 226px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 152px;
+    height: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 234px;
+    height: 59px;
+  }
+}
+
+.table__data-text {
+  font-size: 14px;
+  line-height: 30px;
+  margin-left: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
 .table__text {
   line-height: 30px;
+  margin-left: 15px;
 }

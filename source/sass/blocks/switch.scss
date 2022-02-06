@@ -6,12 +6,14 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 45px;
-  }
 
-  &--table {
-    @media (min-width: $tablet-width) {
+    &--table {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
