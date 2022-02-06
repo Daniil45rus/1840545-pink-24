@@ -10,10 +10,10 @@
     &::before {
       content: "";
       display: block;
-      background-image: url("../../img/timer-t.png");
+      background-image: url("../img/timer-t.png");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/timer-t@2x.png");
+        background-image: url("../img/timer-t@2x.png");
       }
       background-size: 238px 276px;
       background-repeat: no-repeat;
@@ -30,10 +30,10 @@
     background-color: $base-bg;
 
     &::before {
-      background-image: url("../../img/timer-d.png");
+      background-image: url("../img/timer-d.png");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/timer-d@2x.png");
+        background-image: url("../img/timer-d@2x.png");
       }
       background-size: 298px 345px;
       width: 298px;

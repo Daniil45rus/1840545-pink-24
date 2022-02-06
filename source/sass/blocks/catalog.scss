@@ -52,6 +52,25 @@
 
 .catalog__panorama {
   height: 127px;
+  position: relative;
+
+  &::before {
+    content: "ПАНОРАМА ДНЯ";
+    font-weight: bold;
+    font-size: 9px;
+    line-height: 11px;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+    position: absolute;
+    width: 101px;
+    height: 9px;
+    padding: 14px 20px;
+    top: 0;
+    right: 0;
+    background-color: $rare-color;
+    z-index: 2;
+  }
 
   @media (min-width: $tablet-width) {
     height: 509px;
