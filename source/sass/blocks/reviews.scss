@@ -28,6 +28,15 @@
 .reviews__arrow {
   display: none;
   cursor: pointer;
+  fill: rgba($color: #283645, $alpha: 0.3);
+
+  &:hover {
+    fill: rgba($color: #283645, $alpha: 0.6);
+  }
+
+  &:active {
+    fill: rgba($color: #283645, $alpha: 0.1);
+  }
 
   @media (min-width: $desktop-width) {
     display: block;

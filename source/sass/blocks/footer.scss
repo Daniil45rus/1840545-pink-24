@@ -1,7 +1,3 @@
-.footer {
-
-}
-
 .footer__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
@@ -14,8 +10,32 @@
   display: block;
   margin: 0 auto;
   margin-top: 40px;
+  fill: #283645;
+
+  &:hover {
+    fill: $rare-color;
+  }
+
+  &:active {
+    fill: #283645;
+    opacity: 0.3;
+  }
+
+  &--desk {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--mob-tab {
+      display: none;
+    }
+
+    &--desk {
+      display: block;
+    }
   }
 }

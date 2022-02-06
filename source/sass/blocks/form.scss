@@ -34,6 +34,7 @@
     padding: 0;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
+    margin-top: -25px;
   }
 }
 
@@ -95,6 +96,10 @@
       margin-top: 40px;
     }
   }
+}
+
+.form__set--nb .wrapper {
+  border: none;
 }
 
 .form__set--area .wrapper,
@@ -172,6 +177,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 14px 31px;
+    margin-left: 178px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 338px;
   }
 }
 
@@ -252,7 +263,7 @@
 .form__set--swap .form__text {
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding: 23px 79px 23px 20px;
+    padding: 20px 79px 20px 20px;
     width: 397px;
   }
 
@@ -263,7 +274,7 @@
 
 .form__set--swap .wrapper {
   @media (min-width: $tablet-width) {
-    padding-bottom: 37px;
+    padding: 46px 0 37px;
   }
 }
 
@@ -279,10 +290,16 @@
 
 .form__set--area .form__title {
   margin-bottom: 22px;
+  margin-left: 68px;
 
   @media (min-width: $tablet-width) {
     padding: 14px 38px;
+    margin-left: 178px;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 338px;
   }
 }
 
@@ -299,6 +316,8 @@
   line-height: 18px;
   margin: 0;
   text-align: center;
+  font-weight: 400;
+  display: inline-block;
 
   @media (max-width: $mobile-width-only) {
     &--change {
@@ -308,8 +327,6 @@
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
-    margin-top: -25px;
-    display: inline-block;
     margin-bottom: 0;
   }
 }
@@ -317,7 +334,7 @@
 .form__text,
 .form__comment {
   font-size: 18px;
-  line-height: 30px;
+  line-height: 19px;
 
   &::placeholder {
     color: #283645;
@@ -328,7 +345,7 @@
   margin-top: 17px;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
-  padding: 23px 20px;
+  padding: 20px 20px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -355,7 +372,7 @@
   }
 }
 
-.form__button-wrapper {
+.form__button-wrapper .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -369,7 +386,7 @@
   }
 
   @media (min-width: $desktop-width) {
-
+    width: 940px;
   }
 }
 
@@ -388,5 +405,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    padding: 23px 55px;
+    width: 296px;
   }
 }

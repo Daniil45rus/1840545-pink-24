@@ -1,0 +1,94 @@
+.advantage {
+  display: none;
+
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding: 102px 0 88px;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      background-image: url("../../img/timer-t.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/timer-t@2x.png");
+      }
+      background-size: 238px 276px;
+      background-repeat: no-repeat;
+      width: 238px;
+      height: 276px;
+      position: absolute;
+      top: 54px;
+      left: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 115px 0 120px;
+    background-color: $base-bg;
+
+    &::before {
+      background-image: url("../../img/timer-d.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/timer-d@2x.png");
+      }
+      background-size: 298px 345px;
+      width: 298px;
+      height: 345px;
+      top: 17px;
+      left: 131px;
+    }
+  }
+}
+
+.advantage .wrapper {
+  @media (min-width: $tablet-width) {
+    padding-left: 330px;
+    width: 310px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 534px;
+    padding-left: 500px;
+  }
+}
+
+.advantage__title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  margin: 0 0 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin-bottom: 37px;
+  }
+}
+
+.advantage__text {
+  margin: 0 0 24px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 47px;
+  }
+}
+
+.advantage__link {
+  color: $rare-color;
+  text-decoration-line: underline;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

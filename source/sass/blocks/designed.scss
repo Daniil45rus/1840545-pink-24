@@ -7,7 +7,20 @@
   justify-content: center;
 }
 
+.designed:hover .designed__icon {
+  fill: #283645;
+}
+
+.designed:active .designed__icon {
+  fill: #283645;
+  opacity: 0.3;
+}
+
 .designed__text {
   margin-top: 6px;
   margin-right: 15px;
+}
+
+.designed__icon {
+  fill: $rare-color;
 }

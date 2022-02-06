@@ -1,0 +1,125 @@
+.modal-sending-succes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+
+  &--closed {
+    display: none;
+  }
+}
+
+.modal-sending-succes__container {
+  box-sizing: border-box;
+  width: 320px;
+  background-color: #ffffff;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 44px;
+  padding-top: 47px;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 1px;
+  position: relative;
+  z-index: -3;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 164px;
+    background-color: #f2f2f2;
+    z-index: -2;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    border-radius: 5px;
+    padding-right: 55px;
+    padding-left: 55px;
+    padding-top: 49px;
+    padding-bottom: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+    padding-right: 162px;
+    padding-left: 162px;
+  }
+}
+
+.modal-sending-succes__title {
+  display: block;
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    width: 220px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
+}
+
+.modal-sending-succes__text {
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 85px;
+  width: 266px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 24px;
+    width: 320px;
+    margin: 0 auto;
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 380px;
+    margin-bottom: 92px;
+  }
+}
+
+.modal-sending-succes__link {
+  display: block;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #2aab6d;
+  border-radius: 1px;
+  text-decoration: none;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 296px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}

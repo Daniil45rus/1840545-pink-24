@@ -29,6 +29,24 @@
     border-right: none;
   }
 
+  &:nth-child(3) {
+    position: relative;
+
+    &::before {
+      content: "ХИТ";
+      display: block;
+      position: absolute;
+      background-color: $rare-color;
+      width: 160px;
+      height: 24px;
+      transform: rotate(-45deg);
+      overflow: hidden;
+      top: 20px;
+      left: -50px;
+      align-items: center;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     width: 152px;
     height: 40px;
