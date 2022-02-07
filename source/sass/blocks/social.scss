@@ -4,7 +4,7 @@
   list-style-type: none;
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 38px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -13,7 +13,7 @@
 
 .social__item {
   text-align: center;
-  margin-right: 15px;
+  margin-right: 9px;
 }
 
 .social__item:nth-child(3) {

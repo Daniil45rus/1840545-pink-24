@@ -29,6 +29,24 @@
     border-right: none;
   }
 
+  &:nth-child(3) {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "ХИТ";
+      display: block;
+      position: absolute;
+      background-color: $rare-color;
+      width: 160px;
+      height: 24px;
+      transform: rotate(-45deg);
+      top: 20px;
+      left: -50px;
+      align-items: center;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     width: 152px;
     height: 40px;
@@ -86,13 +104,13 @@
   }
 
   &--yes {
-    background-image: url(../img/yes.svg);
+    background-image: url("../img/yes.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--no {
-    background-image: url(../img/no.svg);
+    background-image: url("../img/no.svg");
     background-repeat: no-repeat;
     background-position: center;
   }

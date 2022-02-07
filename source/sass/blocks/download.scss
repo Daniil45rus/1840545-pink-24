@@ -29,7 +29,7 @@
   font-size: 18px;
   line-height: 18px;
   text-decoration: none;
-  padding: 16px 38px;
+  padding: 16px 15px;
   margin-top: 28px;
   border: 3px solid #ffffff;
   box-sizing: border-box;
@@ -81,21 +81,21 @@
 }
 
 .download__item-ios {
-  background-image: url(../img/apple.svg);
+  background-image: url("../img/apple.svg");
   background-repeat: no-repeat;
   width: 47px;
   height: 56px;
 }
 
 .download__item-android {
-  background-image: url(../img/android.svg);
+  background-image: url("../img/android.svg");
   background-repeat: no-repeat;
   width: 43px;
   height: 47px;
 }
 
 .download__item-windows {
-  background-image: url(../img/microsoft.svg);
+  background-image: url("../img/microsoft.svg");
   background-repeat: no-repeat;
   width: 44px;
   height: 41px;
@@ -104,7 +104,7 @@
 .download__text {
   font-weight: 300;
   color: #ffffff;
-  margin: 28px 0 38px;
+  margin: 20px 0 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;

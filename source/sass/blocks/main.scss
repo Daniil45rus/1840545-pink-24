@@ -10,58 +10,64 @@
 }
 
 .main__header {
-  background-image: url(../img/building-m.png);
+  background-color: #193241;
+  background-image: url("../img/building-m.png");
 
   @media (min-resolution: 2dppx) {
-    background-image: url(../img/building-m@2x.png);
+    background-image: url("../img/building-m@2x.png");
   }
   background-repeat: no-repeat;
   background-size: 100%;
   align-items: center;
-  height: 237px;
+  min-height: 237px;
   position: relative;
 
   &--index {
-    height: 462px;
+    min-height: 462px;
 
     &::before {
       content: "";
       display: block;
-      position: relative;
+      position: absolute;
       height: 286px;
-      background-image: url(../img/phone-m.png);
+      width: 320px;
+      background-image: url("../img/phone-m.png");
       background-repeat: no-repeat;
-      bottom: -175px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
 
       @media (min-resolution: 2dppx) {
-        background-image: url(../../img/phone-m@2x.png);
+        background-image: url("../../img/phone-m@2x.png");
         background-size: 320px auto;
       }
     }
   }
 
   @media (min-width: $tablet-width) {
-    height: 440px;
-    background-image: url(../img/building-tab.png);
+    min-height: 440px;
+    background-image: url("../img/building-tab.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/building-tab@2x.png);
+      background-image: url("../img/building-tab@2x.png");
     }
 
     &--index {
-      height: 729px;
-      background-image: url(../img/building-t.png);
+      min-height: 729px;
+      background-image: url("../img/building-t.png");
 
       @media (min-resolution: 2dppx) {
-        background-image: url(../img/building-t@2x.png);
+        background-image: url("../img/building-t@2x.png");
       }
 
       &::before {
         height: 545px;
-        background-image: url(../img/phone-t.png);
+        width: 660px;
+        background-image: url("../img/phone-t.png");
 
         @media (min-resolution: 2dppx) {
-          background-image: url(../img/phone-t@2x.png);
+          background-image: url("../img/phone-t@2x.png");
           background-size: 660px auto;
         }
         top: 185px;
@@ -71,26 +77,26 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 394px;
-    background-image: url(../img/building-desk.png);
+    min-height: 394px;
+    background-image: url("../img/building-desk.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/building-desk@2x.png);
+      background-image: url("../img/building-desk@2x.png");
     }
 
     &--index {
-      background-image: url(../img/building-d.png);
+      background-image: url("../img/building-d.png");
 
       @media (min-resolution: 2dppx) {
-        background-image: url(../img/building-d@2x.png);
+        background-image: url("../img/building-d@2x.png");
       }
-      height: 853px;
+      min-height: 853px;
 
       &::before {
-        background-image: url(../img/phone-d.png);
+        background-image: url("../img/phone-d.png");
 
         @media (min-resolution: 2dppx) {
-          background-image: url(../img/phone-d@2x.png);
+          background-image: url("../img/phone-d@2x.png");
           background-size: 1050px auto;
         }
         width: 1050px;
@@ -107,28 +113,29 @@
   color: #ffffff;
   font-weight: 300;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 33px;
   margin: 0 auto;
-  margin-top: 99px;
-  top: 102px;
+  margin-top: 95px;
   text-align: center;
 
   &--index {
-    width: 280px;
-    top: -289px;
-    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 88px;
+    line-height: 30px;
+    position: absolute;
   }
 
   @media (min-width: $tablet-width) {
     &--form {
       width: 500px;
     }
-    font-size: 40px;
-    line-height: 48px;
-    margin-top: 191px;
-    z-index: 2;
-    top: -531px;
-    left: -163px;
+    font-size: 50px;
+    line-height: 69px;
+    margin-top: 175px;
+    top: 10px;
+    left: -310px;
   }
 
   @media (min-width: $desktop-width) {
@@ -141,9 +148,8 @@
     }
     font-size: 50px;
     line-height: 68px;
-    margin-top: 184px;
-    top: -626px;
-    left: -328px;
+    margin-top: 170px;
+    top: 0;
+    left: -650px;
   }
 }
-

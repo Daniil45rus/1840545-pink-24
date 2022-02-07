@@ -1,11 +1,12 @@
 .footer {
-
+  @media (min-width: $desktop-width) {
+    padding: 22px;
+  }
 }
 
 .footer__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
 }
@@ -13,9 +14,36 @@
 .footer__logo {
   display: block;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 35px;
+  fill: #283645;
+  cursor: pointer;
+
+  &:hover {
+    fill: $rare-color;
+  }
+
+  &:active {
+    fill: #283645;
+    opacity: 0.3;
+  }
+
+  &--desk {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: -18px 75px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: -18px 233px 0 0;
+
+    &--mob-tab {
+      display: none;
+    }
+
+    &--desk {
+      display: block;
+    }
   }
 }

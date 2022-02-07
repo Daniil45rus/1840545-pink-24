@@ -17,7 +17,7 @@
 .catalog__text {
   line-height: 30px;
   text-align: center;
-  margin: 55px 0 60px;
+  margin: 44px 0 50px;
 
 
   @media (min-width: $tablet-width) {
@@ -52,6 +52,25 @@
 
 .catalog__panorama {
   height: 127px;
+  position: relative;
+
+  &::before {
+    content: "ПАНОРАМА ДНЯ";
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 9px;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+    position: absolute;
+    width: 101px;
+    height: 8px;
+    padding: 14px 20px;
+    top: -1px;
+    right: 0;
+    background-color: $rare-color;
+    z-index: 2;
+  }
 
   @media (min-width: $tablet-width) {
     height: 509px;
@@ -69,17 +88,39 @@
     top: 0;
   }
 
-  @media (min-width: $desktop-width) {
-    left: -130px;
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 300px;
+
+    &--panorama {
+      width: 660px;
+      height: 509px;
+    }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    height: 400px;
+
+    &--panorama {
+      width: 1200px;
+      height: 506px;
+      left: -130px;
+    }
+  }
+}
+
+.catalog__panorama ~ .catalog__post-content {
+  margin-top: 9px;
 }
 
 .catalog__post-content {
   background-color: $base-bg;
-  padding: 25px 0;
+  padding: 23px 0;
   padding-left: 17px;
   display: flex;
   flex-direction: column;
+  margin-top: -7px;
 
   @media (min-width: $tablet-width) {
     height: 155px;
@@ -88,35 +129,41 @@
 }
 
 .catalog__post-info {
-  margin-bottom: 14px;
+  margin-bottom: 2px;
 }
 
 .catalog__post-text {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 15px;
 }
 
 .catalog__post-time {
   font-weight: 300;
-  font-size: 12px;
 }
 
 .catalog__post-like {
+  height: 12px;
   margin: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
   padding-left: 31px;
   font-size: 12px;
+  text-transform: uppercase;
   color: $rare-color;
   position: relative;
   margin-top: auto;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
 
   &::before {
     content: "";
     display: block;
-    background-image: url(../img/heart.svg);
+    background-image: url("../img/heart.svg");
     background-repeat: no-repeat;
     position: absolute;
     right: 0;
-    top: 6px;
+    top: 1px;
     width: 13px;
     height: 12px;
   }
