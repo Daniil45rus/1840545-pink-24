@@ -9,8 +9,9 @@
 .footer__logo {
   display: block;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 35px;
   fill: #283645;
+  cursor: pointer;
 
   &:hover {
     fill: $rare-color;

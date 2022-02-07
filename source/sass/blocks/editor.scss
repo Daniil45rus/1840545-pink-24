@@ -114,6 +114,12 @@
   fill: $rare-color;
 }
 
+.editor__tool:hover .editor__icon {
+  @media (max-width: $mobile-width-only) {
+    opacity: 0.5;
+  }
+}
+
 .editor__icon {
   width: 48px;
   height: 48px;
@@ -172,6 +178,11 @@
   background-color: #ffffff;
   position: absolute;
   top: -5px;
+  cursor: pointer;
+
+  &:active {
+    background-color: $rare-color;
+  }
 }
 
 .editor__buttons {
@@ -191,9 +202,11 @@
   line-height: 13px;
   width: 280px;
   height: 55px;
-  border: 3px solid #283645;
+  border: 3px solid rgba($color: #283645, $alpha: 0.1);
+  color: rgba($color: #283645, $alpha: 0.1);
   border-radius: 30px;
   box-sizing: border-box;
+  cursor: pointer;
 
   &:not(:last-child) {
     margin-bottom: 12px;
@@ -202,10 +215,27 @@
   &--post {
     color: $rare-color;
     border-color: $rare-color;
+
+    &:hover {
+      background-color: $rare-color;
+      color: #ffffff;
+    }
+
+    &:active {
+      color: rgba($color: #ffffff, $alpha: 0.3);
+    }
   }
 
   &--cancel {
-    opacity: 0.1;
+    &:hover {
+      border-color: rgba($color: #283645, $alpha: 0.3);
+      color: rgba($color: #283645, $alpha: 0.3);
+    }
+
+    &:active {
+      background-color: rgba($color: #283645, $alpha: 0.3);
+      color: rgba($color: #ffffff, $alpha: 0.3);
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -215,5 +245,9 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     width: 183px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 }
