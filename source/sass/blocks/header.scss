@@ -16,13 +16,10 @@
 .header__logo {
   padding: 22px 20px 21px;
   margin-right: auto;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     padding: 27px 20px 43px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 153px;
   }
 }
 

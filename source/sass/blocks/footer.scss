@@ -1,8 +1,9 @@
 .footer {
   @media (min-width: $desktop-width) {
-    margin-top: -77px;
+    padding: 22px;
   }
 }
+
 .footer__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;

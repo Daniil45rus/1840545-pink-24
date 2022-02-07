@@ -10,6 +10,11 @@
     margin-right: 0;
     margin-left: auto;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-left: auto;
+  }
 }
 
 .designed:hover .designed__icon {

@@ -1,7 +1,27 @@
 .navigation {
   min-width: 66px;
   position: relative;
+
+  &--openned {
+    background-color: #283645;
+    border-bottom: 1px solid #000000;
+    box-sizing: border-box;
+    margin-left: -130px;
+    width: 100vw;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--openned {
+      margin-left: -187px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+    margin-right: 20px;
+  }
 }
+
 
 .navigation__toggle {
   position: absolute;
@@ -13,10 +33,10 @@
   cursor: pointer;
   border: none;
   background-color: inherit;
-  padding: 33px 33px;
+  padding: 32px 33px;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 55px;
+    padding: 43px 35px;
     left: -37px;
     top: 3px;
   }
@@ -43,19 +63,57 @@
   }
 }
 
-.navigation--opened .navigation__list {
-  display: flex;
-  flex-direction: column;
+.navigation--closed .navigation__toggle {
+  &:hover {
+    &::before {
+      background-color: $rare-color;
+      box-shadow: 0 10px 0 0 $rare-color, 0 20px 0 0 $rare-color;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: $rare-color;
+      box-shadow: 0 10px 0 0 $rare-color, 0 20px 0 0 $rare-color;
+      opacity: 0.3;
+    }
+  }
 }
 
-.navigation--opened .navigation__toggle {
+.navigation--openned .navigation__list {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin-top: 66px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    margin-top: 0;
+    width: 620px;
+  }
+}
+
+.navigation--openned .navigation__link {
+  &:hover {
+    color: $rare-color;
+  }
+}
+
+.navigation--openned .navigation__toggle {
+  right: 7px;
+
   &::before,
   &::after {
     content: "";
     position: absolute;
+    display: block;
     top: 30px;
     left: 26px;
-    width: 33px;
+    width: 30px;
     height: 2px;
     background-color: #ffffff;
   }
@@ -68,6 +126,26 @@
   &::after {
     transform: rotate(-45deg);
   }
+
+  &:hover {
+    &::before,
+    &::after {
+      background-color: $rare-color;
+    }
+  }
+
+  &:active {
+    &::before,
+    &::after {
+      background-color: $rare-color;
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 587px;
+    top: 23px;
+  }
 }
 
 
@@ -76,11 +154,11 @@
   padding: 0;
   list-style-type: none;
   background-color: inherit;
-  width: 620px;
 
   @media (min-width: $desktop-width) {
     height: 100%;
     align-items: center;
+    width: 620px;
   }
 }
 
@@ -93,11 +171,12 @@
 }
 
 .navigation__item {
-  height: 63px;
+  height: 64px;
   text-align: center;
   background-color: #283645;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   border-bottom: 1px solid #000000;
+  box-sizing: border-box;
 
   @media (min-width: $desktop-width) {
     height: 43px;
@@ -118,7 +197,7 @@
 .navigation__link {
   display: block;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 18px;
   line-height: 32px;
   color: #ffffff;
   text-decoration: none;
