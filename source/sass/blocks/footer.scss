@@ -1,7 +1,11 @@
+.footer {
+  @media (min-width: $desktop-width) {
+    margin-top: -77px;
+  }
+}
 .footer__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
 }
@@ -27,10 +31,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: -18px 75px 0 0;
   }
 
   @media (min-width: $desktop-width) {
+    margin: -18px 233px 0 0;
+
     &--mob-tab {
       display: none;
     }

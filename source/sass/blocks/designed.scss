@@ -5,6 +5,11 @@
   line-height: 18px;
   margin: 39px 0;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    margin-left: auto;
+  }
 }
 
 .designed:hover .designed__icon {
@@ -19,6 +24,10 @@
 .designed__text {
   margin-top: 6px;
   margin-right: 15px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .designed__icon {
